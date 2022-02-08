@@ -25,29 +25,6 @@ class Attendance{
         })
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     Add(data, res){
         const sql = 'INSERT INTO Attendance SET ?'
 
