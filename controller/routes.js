@@ -9,7 +9,12 @@ module.exports = (app) => {
         Attendance.Search(id, res)
     })
     app.post('/atendimentos', (req, res) => {
-        const data = req.body
-        Attendance.Add(data, res)
+        const attendance = req.body
+        Attendance.Add(attendance, res)
+    })
+    app.patch('/atendimentos/:id', (req, res) => {
+        const id = req.params.id
+        const attendance = req.body
+        Attendance.Add(id, attendance, res)
     })
 }
